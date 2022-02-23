@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #a9a9a9;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  background-color: rgb(40, 40, 58);
+  color: white;
+  padding: 2px;
+  height: 50px;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 70%;
+  margin: auto auto;
+}
+
+input {
+  height: 50px;
+  font-size: 1.2rem;
+  width: 80%;
+  padding-left: 2%;
+  border: none;
+  outline: none;
+}
+
+button.add {
+  width: 20%;
+  cursor: pointer;
+  background: rgb(2, 162, 2);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  height: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button.add:hover {
+  background: rgb(1, 118, 1);
+  transition: 0.5s;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto auto;
+  padding-top: 40px;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 50px;
+  width: 100%;
+  box-shadow: 0 0 20px #ccc;
+  margin-bottom: 2%;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.item.clicado {
+  background: rgb(199, 237, 146);
+}
+
+.item.clicado .item-nome {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.item-icone {
+  flex: 10%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item-nome {
+  flex: 75%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-botao {
+  flex: 15%;
+}
+
+.delete {
+  background: rgb(214, 43, 43);
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.delete:hover {
+  background: rgb(184, 6, 6);
+  transition: 0.5s;
+}
+
+.mdi-check-circle {
+  color: green;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(40, 40, 58);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+span {
+  font-weight: bold;
+}
